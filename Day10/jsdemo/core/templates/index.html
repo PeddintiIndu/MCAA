@@ -1,0 +1,43 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <link rel="stylesheet" href="{% static 'css/mystyle.css' % }">
+<meta charset="UTF-8">
+<title>Javascript in Django</title>
+<script src="{% static 'js/script.js' %}">
+</script>
+</head>    
+<body bgcolor=skyblue>
+<marquee>
+<h1>Hello! A very Good Morning to All.....</h1>
+</marquee>
+<img src="{% static  'img/a.jpeg' %}">
+<table border=5 align="center">
+<tr>
+<th>FirstNumber</th>
+<td><input id="txtFirstNumber"></td>
+</tr>
+<tr>
+<th>SecondNumber</th>
+<td><input id="txtSecondNumber"></td>
+</tr>
+<tr>
+<th>Sum:</th>
+<td><input id="txtAnswer"></td>
+</tr>
+<tr>
+<td><button onClick="add()">+</button></td>
+<td><button onClick="sub()">-</button></td>
+<td><button onClick="mul()">*</button></td>
+</tr>
+<tr>
+<th colspan="2">sum=<input id="txtAnswer"></th>
+</tr>
+<tr>
+<th colspan="2"><button onClick="abc()">clear</th>
+</tr>
+</table>
+</body>
+</html>
