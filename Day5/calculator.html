@@ -1,0 +1,64 @@
+<html>
+<head>
+<script>
+function add()
+{
+var num1, num2, sum;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+sum = num1 +num2;
+document.getElementById("txtAnswer").value = sum;
+}
+function sub()
+{
+var num1, num2, sub;
+num1 = parseInt(document.getElementById("txtFirstNumber").value);
+num2 = parseInt(document.getElementById("txtSecondNumber").value);
+sub = num1 - num2;
+document.getElementById("txtAnswer").value = sub;
+}
+function mul()
+{
+var num1, num2, mul;
+num1 = parseInt(document.getElementById("txtFirstNumber").value);
+num2 = parseInt(document.getElementById("txtSecondNumber").value);
+mul = num1 * num2;
+document.getElementById("txtAnswer").value = mul;
+}
+function abc()
+{
+document.getElementById("txtFirstNumber").value;
+document.getElementById("txtSecondNumber").value;
+document.getElementById("txtAnswer").value= " ";
+}
+</script>
+</head>
+<body>
+<table border=5 align="center">
+<tr>
+<th>FirstNumber</th>
+<td><input id="txtFirstNumber"></td>
+</tr>
+<tr>
+<th>SecondNumber</th>
+<td><input id="txtSecondNumber"></td>
+</tr>
+<tr>
+<th>Sum:</th>
+<td><input id="txtAnswer"></td>
+</tr>
+<tr>
+<td><button onClick="add()">+</button></td>
+<td><button onClick="sub()">-</button></td>
+<td><button onClick="mul()">*</button></td>
+</tr>
+<tr>
+<th colspan="2">sum=<input id="txtAnswer"></th>
+</tr>
+<tr>
+<th colspan="2"><button onClick="abc()">clear</th>
+</tr>
+</table>
+</body>
+</html>
+
